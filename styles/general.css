@@ -60,8 +60,25 @@ body {
   background-color: var(--basic-white);
   letter-spacing: 0.02em;
   font-size: 16px;
-  line-height: 1.5;
   font-weight: 400;
+}
+
+.title {
+  color: var(--dark-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.title-second {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .button {
