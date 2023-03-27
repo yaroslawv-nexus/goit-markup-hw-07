@@ -44,7 +44,7 @@
 }
 @media screen and (max-width: 1199px) {
   .address-item:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
 }
 
@@ -78,9 +78,9 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    transition: color 250ms var(--cubic-function);
     padding-top: 24px;
     padding-bottom: 24px;
-    transition: color 250ms var(--cubic-function);
   }
 
   .index-nav .link:hover,
@@ -94,8 +94,6 @@
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: inherit;
-    padding-top: 24px;
-    padding-bottom: 24px;
     transition: color 250ms var(--cubic-function);
   }
 
@@ -143,6 +141,8 @@
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 24px;
   }
 
   .address-flex {
