@@ -362,7 +362,8 @@
 
 .customers-flex .link {
   display: inline-block;
-  padding: 16px 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border: 1px solid var(--customers-icon-base);
   border-radius: 4px;
   color: var(--customers-icon-base);
@@ -381,6 +382,15 @@
 }
 
 @media screen and (max-width: 767px) {
+  .customers-flex .item {
+    width: calc(50% - 8px);
+  }
+
+  .customers-flex .link {
+    text-align: center;
+    width: 100%;
+  }
+
   .customers-flex .item:nth-child(2n) {
     margin-left: 16px;
   }
