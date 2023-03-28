@@ -121,3 +121,124 @@
     padding-bottom: 188px;
   }
 }
+
+/*!ADVANT SECTION  */
+.advantages {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.advantages .advant-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .advant-item {
+    margin-bottom: 72px;
+  }
+
+  .advant-text {
+    font-weight: 500;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages .advant-title {
+    text-align: left;
+  }
+  .advant-flex {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .advant-flex {
+    flex-wrap: wrap;
+  }
+
+  .advant-item {
+    width: calc(50% - 12px);
+  }
+
+  .advant-item:nth-child(2n + 1) {
+    margin-right: 24px;
+  }
+
+  .advant-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 72px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .advantages .advant-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .advant-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .advant-flex .advant-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .advant-item::before {
+    content: "";
+    display: block;
+    margin-bottom: 8px;
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .advant-item:nth-child(1)::before {
+    background-image: url(../images/advant-icon/sputnic.svg);
+  }
+  .advant-item:nth-child(2)::before {
+    background-image: url(../images/advant-icon/time.svg);
+  }
+  .advant-item:nth-child(3)::before {
+    background-image: url(../images/advant-icon/computer.svg);
+  }
+  .advant-item:nth-child(4)::before {
+    background-image: url(../images/advant-icon/astronaut.svg);
+  }
+}
+
+/* !WORKS */
+
+@media screen and (max-width: 1199px) {
+  .works {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .works {
+    padding-bottom: 120px;
+  }
+
+  .works-flex {
+    display: flex;
+  }
+
+  .works-flex .works-item:not(:last-child) {
+    margin-right: 24px;
+  }
+}
