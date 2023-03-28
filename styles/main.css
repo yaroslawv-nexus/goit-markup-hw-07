@@ -430,6 +430,10 @@
   color: inherit;
 }
 
+.text-footer {
+  line-height: 1.5;
+}
+
 .footer {
   background-color: var(--dark-color);
   padding-top: 96px;
